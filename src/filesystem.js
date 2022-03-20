@@ -86,9 +86,6 @@ const createFile = async (
         rarity: selectedElement.rarity
       });
     });
-    // add an image signature as the edition count to the top left of the image
-    signImage(ctx, `#${editionCount}`);
-    // write the image to the output directory
   });
 
   const base64ImgData = canvas.toBuffer();
